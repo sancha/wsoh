@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Power Console</title>
+		<link type="text/css" rel="stylesheet" href="css/reset.css">
+		<link type="text/css" rel="stylesheet" href="css/iframe.style.css">
+		<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/jquery.custom.js"></script>
+		<script type="text/javascript" charset="utf-8" src="js/box.script.js"></script>
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function(){
+				pid = $.urlparam('parentid');
+				params = { 'parentid' : pid };
+				$('#comment').miniConsole(params);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="comment" contenteditable="true" DIR="LTR">
+			
+		</div>
+	</body>
+</html>

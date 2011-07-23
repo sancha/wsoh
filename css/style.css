@@ -1,0 +1,80 @@
+body{
+	width:960px;
+	margin:10px auto;
+}
+table td{
+	vertical-align:top;
+}
+#main h1{
+	font-size:24px;
+	margin:10px 0 5px 0;
+}
+.ui-menu .ui-menu-item a, .ui-autocomplete,  .ui-menu{
+	font-size:12px;
+}
+.dropzone-container div {
+  width: 600px;
+  height: 120px;
+  line-height: 120px;
+  display:none;
+  font-size: 3em;
+  text-align: center;
+  position:absolute;
+  top:30px;
+  left:0;
+  opacity:0.8;
+  background: #eee;
+}
+.dropzone-container div.ui-state-active {
+  display:block;
+}
+
+.dropzone-container div.ui-state-highlight {
+  background:#f6f6f6;
+  opacity:1.0;
+}
+
+.console_iframe {
+	height:120px;	
+	width: 600px;
+	overflow: hidden;
+	border:solid 1px #ccc;
+	border-radius: 5px;
+	margin-right:5px;
+}
+.console_input {
+	height: 0px;
+	width: 600px;
+	padding: 0px;
+	border: none;
+	color: transparent;
+}
+#main {
+	font-size:12px;
+	font-family:"Arial";
+	position:relative;
+}
+#main .files{
+	width:600px;
+}
+#main .files tbody tr td{
+	vertical-align:middle;
+}
+#main .fileupload-buttonbar div{
+	margin-bottom:3px;
+}
+#main .ui-button-text{
+	font-size:12px;
+	font-size:12px;
+}
+#main .fileupload-buttonbar{
+	padding:0;
+	margin:0;
+}
+#main .ui-widget-header, #main .ui-widget-content{
+	background:none;
+	border:none;
+}
+#main .fileupload-content .ui-progressbar-value {
+  background: url(pbar-ani.gif);
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<head> 
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<title>Power Console</title>
+
+<link href="css/reset.css" media="screen" rel="stylesheet" type="text/css" >
+<link href="css/ui-lightness/jquery-ui-1.8.14.custom.css" media="screen" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+<link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" >
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.14.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-autocomplete.js"></script>
+<script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="js/daterangepicker.jQuery.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+<script src="js/jquery.fileupload-ui.js"></script>
+<script src="js/jquery.fileupload-drop.js"></script>
+<script type="text/javascript" src="js/power-console.js"></script>
+<script src="js/application.js"></script>
+<script>
+FRIENDS = [{"label":"Andrew Keaveney","value":"203005"},{"label":"Ben Henretig","value":"207920"},{"label":"Gopal Dommety","value":"222816"},{"label":"Eno Inyang","value":"223094"},{"label":"Dave Held","value":"702097"},{"label":"Jia Deng","value":"1112364"},{"label":"Ganesh Nagaraj","value":"1229550"},{"label":"Ibrahim Cotran","value":"1406742"},{"label":"Nikhil Johri","value":"1948313"},{"label":"Davvalue Lipton","value":"3102699"},{"label":"Debanti Sengupta","value":"4003137"},{"label":"Jullet Han","value":"5703065"},{"label":"Nicolas Tilmans","value":"5713164"},{"label":"Nirabh Raj Regmi","value":"210100815"},{"label":"Rahul Bala","value":"500369192"},{"label":"Aravind Narayanan","value":"500968418"},{"label":"Karthik Keyan","value":"501410776"},{"label":"Shantanu Garg","value":"501473272"},{"label":"Vibhav P","value":"503183487"},{"label":"Rahul Rajmohan","value":"503266240"},{"label":"Manuel Rodrigo L\u00f3pez Morales","value":"503304576"},{"label":"Jackie Rotman","value":"503849135"},{"label":"Anant Bhardwaj","value":"506776460"},{"label":"Nitin Natarajan","value":"508427582"},{"label":"Viswanathan Rajagopalan","value":"508592126"},{"label":"Ganesh Chandrasekaran","value":"509106165"},{"label":"Prathyusha Senthil Kumar","value":"509107965"},{"label":"Lenin Ravindranath S","value":"509160773"},{"label":"Navina Ramesh","value":"509185863"},{"label":"Karthik Lakshmanan","value":"509364526"},{"label":"Raghav Prashant Sundar","value":"509383201"},{"label":"Senthil Kanthaswamy","value":"509544910"},{"label":"Rajiv Veeraraghavan","value":"510051098"},{"label":"Vishal Merani","value":"511341895"},{"label":"Avinayan Senthil","value":"512751107"},{"label":"Bharani Kumar Duraisamy","value":"514726398"},{"label":"Subodh Iyengar","value":"515659129"},{"label":"Prasanna Sankaranarayanan","value":"516678567"},{"label":"Abhirami Senthilkumaran","value":"516765079"},{"label":"S.Adalbert Gerald","value":"517237021"},{"label":"Vighnesh Rege","value":"517282982"},{"label":"Lakshminarasimhan Krishnan","value":"517608644"},{"label":"Preethy Krishnamurthy","value":"519495231"},{"label":"Shanthi Balasubramanian","value":"524112065"},{"label":"Purushoth Mahendran","value":"531888060"},{"label":"Rohith Nathan","value":"533420223"},{"label":"Rajesh S Rajagopal","value":"536941114"},{"label":"Sriram Madhavan","value":"538608973"},{"label":"Vivek Balu","value":"538724672"},{"label":"Nizam Sp","value":"543248368"},{"label":"Nithin Gunasekaran","value":"544731313"},{"label":"Karthik Ramaswamy","value":"544942023"},{"label":"Krishna Malladi","value":"548186008"},{"label":"Praveen Royam Krishnaswamy","value":"548427488"},{"label":"Ankitha Rajendaran","value":"548620388"},{"label":"Arathi Shankari","value":"549519805"},{"label":"Arunkumar Mns","value":"550687712"},{"label":"Kavya Aps","value":"554084096"},{"label":"Vivek Thanghavel","value":"554183660"},{"label":"Rahul Agarwal Bhavsinghka","value":"554923734"},{"label":"Gokul Raj","value":"555530830"},{"label":"Mithun Parthiban","value":"555924104"},{"label":"Dinesh Sabanaikam","value":"556079345"},{"label":"Tamizh Arasi Ravichandran","value":"556132286"},{"label":"Raghunath Babu","value":"556389775"},{"label":"Abhay Suresh","value":"557189768"},{"label":"Dhyanesh Ramamoorthy","value":"559292725"},{"label":"Shanthoosh Venkat","value":"561782890"},{"label":"Hari Rajesh Kanna","value":"565011611"},{"label":"HyungGu Jung","value":"565820789"},{"label":"Ravi Kumar","value":"572690892"},{"label":"Raghav Pasari","value":"574058901"},{"label":"Arun Kumar","value":"574203418"},{"label":"Praveen Kumar Shanmugam","value":"574618280"},{"label":"Agni Varma","value":"579588058"},{"label":"Senthil Krishna","value":"579938507"},{"label":"Neeraj Agrawal","value":"581583744"},{"label":"Bipin Suresh","value":"586866284"},{"label":"Narendran Thiagarajan","value":"589396257"},{"label":"Dinesh Karunakar K","value":"589484507"},{"label":"Lakshmeepathi Ghiree Anandh","value":"591652471"},{"label":"Aditya Ramesh","value":"595000590"},{"label":"Ishaan S Shah","value":"595575488"},{"label":"Nikhil Murali","value":"595867792"},{"label":"Aravind Vel","value":"598467566"},{"label":"Ananth Raghunathan","value":"600217826"},{"label":"Naveen Ganapathi","value":"600551375"},{"label":"Vijay Iyer","value":"600783769"},{"label":"Dwarakesh Ramachandran","value":"602589454"},{"label":"Anshuman Mishra","value":"607926346"},{"label":"Saad Bhamla","value":"611090660"},{"label":"Thanmai Dd","value":"613835009"},{"label":"Vinoth Kewl","value":"614371559"},{"label":"Sathish Prabahar","value":"615006166"},{"label":"Sriram Natarajan","value":"615190777"},{"label":"Anirud Srinivasan","value":"615317171"},{"label":"Guru Hariharan","value":"615346566"},{"label":"Sriram Grandhi","value":"615437580"},{"label":"Arul Velan","value":"615496470"},{"label":"Shiyam Sundar","value":"616160167"},{"label":"Iyswarya Abayamani","value":"617876253"},{"label":"Kripa Durgaprasad","value":"620663364"},{"label":"Prasanna Vanjinathan","value":"623519695"},{"label":"Pratibha Nair","value":"624480334"},{"label":"Amarinder Singh Randhawa","value":"625625829"},{"label":"Mohanraj Gunaseelan","value":"627332294"},{"label":"Akshay Rungta","value":"627560217"},{"label":"Shivashankar Subramanian","value":"628311255"},{"label":"Bharadwaj Vasudevan","value":"629508486"}];	
+TAGS = [{"label":"books","value":"1"},{"label":"pickaxe","value":"2"},{"label":"sword","value":"3"},{"label":"shield","value":"4"},{"label":"trident","value":"5"},{"label":"books","value":"6"},{"label":"WSOH","value":"7"}];
+$(document).ready(function(){
+	$('.iframe-tester').powerConsole({
+		'atlist'	: FRIENDS,
+		'hashlist'	: TAGS
+	});
+	
+	$('.dataget').click(function(e){
+		i$ = window.frames[ iframe_name ].$;
+		i$(window.frames[ iframe_name ].document).trigger('json.get')
+		e.preventDefault();
+	});
+})
+
+</script>
+</head>
+<body>
+	<div id="main">
+	<div id="fileupload">
+		<h1>Power Console - #WSOH</h1>
+		<table><tr><td>
+		<div id='iframe-tester-1' class="iframe-tester"></div>
+		</td><td>
+		
+		<form action="upload.php" method="POST" enctype="multipart/form-data">
+			<div class="fileupload-buttonbar">
+				<div>
+				<label class="fileinput-button">
+					<span>Add files...</span>
+					<input type="file" name="files[]" multiple>
+				</label>
+				</div>
+				<div>
+				<button type="submit" class="start">Start upload</button>
+				</div>
+				<div>
+				<button type="button" class="dataget">Get Data</button>
+				</div>				
+			</div>
+		</form>
+		</td></tr>
+		</table>
+		
+		<div class="dropzone-container">
+			<div class="dropzone ui-corner-all">Drop files here</div>
+		</div>
+		
+		
+		<div class="fileupload-content">
+			<table class="files"></table>
+			<div class="fileupload-progressbar"></div>
+		</div>
+	</div>
+	<script id="template-upload" type="text/x-jquery-tmpl">
+		<tr class="template-upload{{if error}} ui-state-error{{/if}}">
+			<td class="preview"></td>
+			<td class="name">${name}</td>
+			<td class="size">${sizef}</td>
+			{{if error}}
+				<td class="error" colspan="2">Error:
+					{{if error === 'maxFileSize'}}File is too big
+					{{else error === 'minFileSize'}}File is too small
+					{{else error === 'acceptFileTypes'}}Filetype not allowed
+					{{else error === 'maxNumberOfFiles'}}Max number of files exceeded
+					{{else}}${error}
+					{{/if}}
+				</td>
+			{{else}}
+				<td class="progress"><div></div></td>
+				<td class="start"><button>Start</button></td>
+			{{/if}}
+			<td class="cancel"><button>Cancel</button></td>
+		</tr>
+	</script>
+	<script id="template-download" type="text/x-jquery-tmpl">
+		<tr class="template-download{{if error}} ui-state-error{{/if}}">
+			{{if error}}
+				<td></td>
+				<td class="name">${name}</td>
+				<td class="size">${sizef}</td>
+				<td class="error" colspan="2">Error:
+					{{if error === 1}}File exceeds upload_max_filesize (php.ini directive)
+					{{else error === 2}}File exceeds MAX_FILE_SIZE (HTML form directive)
+					{{else error === 3}}File was only partially uploaded
+					{{else error === 4}}No File was uploaded
+					{{else error === 5}}Missing a temporary folder
+					{{else error === 6}}Failed to write file to disk
+					{{else error === 7}}File upload stopped by extension
+					{{else error === 'maxFileSize'}}File is too big
+					{{else error === 'minFileSize'}}File is too small
+					{{else error === 'acceptFileTypes'}}Filetype not allowed
+					{{else error === 'maxNumberOfFiles'}}Max number of files exceeded
+					{{else error === 'uploadedBytes'}}Uploaded bytes exceed file size
+					{{else error === 'emptyResult'}}Empty file upload result
+					{{else}}${error}
+					{{/if}}
+				</td>
+			{{else}}
+				<td class="preview">
+					{{if thumbnail_url}}
+						<a title="${name}" class='image-preview' href="${url}"><img src="${thumbnail_url}"></a>
+					{{/if}}
+					{{if doc_url}}
+						<a title="${name}" class='button-preview' href="scribd.php?url=${doc_url}">Preview</a>
+					{{/if}}
+					{{if video_url}}
+						<a title="${name}" class='video-preview' href="player.php?url=${video_url}"><img style='width:90px' src='http://i.ytimg.com/vi/${video_url}/1.jpg'></a>
+					{{/if}}
+				</td>
+				<td class="name">
+					<a href="${url}"{{if thumbnail_url}} target="_blank"{{/if}}>${name}</a>
+				</td>
+				<td class="size">${sizef}</td>
+				<td colspan="2"></td>
+			{{/if}}
+			<td class="delete">
+				<button data-type="${delete_type}" data-url="${delete_url}">.</button>
+			</td>
+		</tr>
+	</script>
+	</div>
+	<div id="output"></div>
+	</body>
+</html>

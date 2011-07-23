@@ -1,0 +1,38 @@
+body{
+	margin:3px;
+	font-family:"Arial";
+	font-size:14px;
+	line-height:24px;
+}
+#comment{
+	z-index:1000;
+	height:100%;
+	overflow:hidden;
+}
+
+#dupdiv{
+	z-index: 10;
+	height:100%;
+	overflow:hidden;
+	color: transparent;
+}
+#dupdiv span{
+	border:solid 1px;
+	border-radius: 5px;
+}
+#dupdiv .user{
+	background:#f2f9fe;
+	border-color:#b1dbff;
+}
+#dupdiv .tag{
+	background:#eefdec;
+	border-color:#97ef82;
+}
+#dupdiv .time{
+	background:#ffeeee;
+	border-color:#f2b3b3;
+}
+#dupdiv .link{
+	background:#f8eafe;
+	border-color:#e6b8fb;
+}
